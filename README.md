@@ -47,9 +47,9 @@ These are development goals, not a claim that every item is already available. S
 
 ## Development status
 
-The current repository is based on the Winlator source tree. Its app, Vortek, and Gladio components are linked as Git submodules. At the current revision, those submodules point to their upstream repositories:
+The current repository is based on the Winlator source tree. Its app, Vortek, and Gladio components are linked as Git submodules. The app submodule points to the WinMali application fork, while Vortek and Gladio remain linked to their upstream repositories:
 
-- [Winlator app source](https://github.com/brunodev85/winlator-app)
+- [WinMali app source](https://github.com/worstpossibleuserlol/winmali-app)
 - [Vortek](https://github.com/brunodev85/vortek)
 - [Gladio](https://github.com/brunodev85/gladio)
 
@@ -185,6 +185,7 @@ The exact files and component revisions can change as the project develops.
 WinMali is possible because of the work of the original Winlator developers and the maintainers of the open-source components it builds upon.
 
 - [Winlator](https://github.com/brunodev85/winlator) — upstream Android project.
+- [WinMali app source](https://github.com/worstpossibleuserlol/winmali-app) — WinMali's Android application source fork.
 - [Winlator app source](https://github.com/brunodev85/winlator-app) — upstream application source.
 - [Termux Pacman GLIBC packages](https://github.com/termux-pacman/glibc-packages) — GLIBC patches.
 - [Wine](https://www.winehq.org/) — Windows compatibility layer.
