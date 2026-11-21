@@ -1,19 +1,3 @@
-<p align="center">
-	<img src="logo.png" width="376" height="128" alt="WinMali Logo" />
-</p>
-
-<p align="center">
-	<a href="https://github.com/worstpossibleuserlol/WinMali/releases">
-		<img src="https://img.shields.io/github/v/release/worstpossibleuserlol/WinMali?style=flat-square&label=latest%20release" alt="Latest release" />
-	</a>
-	<a href="https://github.com/worstpossibleuserlol/WinMali/releases">
-		<img src="https://img.shields.io/github/downloads/worstpossibleuserlol/WinMali/total.svg?style=flat-square&label=downloads" alt="Total downloads" />
-	</a>
-	<a href="https://github.com/worstpossibleuserlol/WinMali/stargazers">
-		<img src="https://img.shields.io/github/stars/worstpossibleuserlol/WinMali?style=flat-square&logo=github&color=ffb300" alt="GitHub stars" />
-	</a>
-</p>
-
 # WinMali
 
 WinMali is an Android project based on [Winlator](https://github.com/brunodev85/winlator), designed to run compatible Windows (x86_64) applications with Wine and Box86/Box64.
