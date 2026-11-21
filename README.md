@@ -1,57 +1,63 @@
 <p align="center">
-	<img src="logo.png" width="376" height="128" alt="Winlator Logo" />
+	<img src="logo.png" width="376" height="128" alt="WinMali Logo" />
 </p>
 
 <p align="center">
-	<a href="https://winlator.org/">
-		<img src="https://img.shields.io/badge/winlator-website-42a5f5?style=flat-square" />
+	<a href="https://github.com/worstpossibleuserlol/WinMali/releases">
+		<img src="https://img.shields.io/github/v/release/worstpossibleuserlol/WinMali?style=flat-square&label=latest%20release" alt="Latest release" />
 	</a>
-	<a href="https://github.com/brunodev85/winlator/releases">
-		<img src="https://img.shields.io/github/downloads/brunodev85/winlator/v11.2.0/total.svg?style=flat-square&label=downloads@v11.2" />
+	<a href="https://github.com/worstpossibleuserlol/WinMali/releases">
+		<img src="https://img.shields.io/github/downloads/worstpossibleuserlol/WinMali/total.svg?style=flat-square&label=downloads" alt="Total downloads" />
 	</a>
-	<a href="https://github.com/brunodev85/winlator/stargazers">
-		<img src="https://img.shields.io/github/stars/brunodev85/winlator?style=flat-square&logo=github&color=ffb300" />
+	<a href="https://github.com/worstpossibleuserlol/WinMali/stargazers">
+		<img src="https://img.shields.io/github/stars/worstpossibleuserlol/WinMali?style=flat-square&logo=github&color=ffb300" alt="GitHub stars" />
 	</a>
 </p>
 
-# Winlator
+# WinMali
 
-Winlator is an Android application that lets you to run Windows (x86_64) applications with Wine and Box86/Box64.
+WinMali is an Android project based on [Winlator](https://github.com/brunodev85/winlator), designed to run compatible Windows (x86_64) applications with Wine and Box86/Box64.
+
+The project focuses on graphics compatibility and usability on Mali-based Android devices. Actual compatibility and performance depend on the device, GPU driver, graphics backend, and WinMali build.
 
 # Installation
 
-1. Download and install the APK (Winlator_11.2.apk) from [GitHub Releases](https://github.com/brunodev85/winlator/releases)
-2. Launch the app and wait for the installation process to finish
+**A public WinMali APK release has not been published yet.** When a build is available:
 
-----
-
-[![Play on Youtube](https://img.youtube.com/vi/ETYDgKz4jBQ/3.jpg)](https://www.youtube.com/watch?v=ETYDgKz4jBQ)
-[![Play on Youtube](https://img.youtube.com/vi/9E4wnKf2OsI/2.jpg)](https://www.youtube.com/watch?v=9E4wnKf2OsI)
-[![Play on Youtube](https://img.youtube.com/vi/czEn4uT3Ja8/2.jpg)](https://www.youtube.com/watch?v=czEn4uT3Ja8)
-[![Play on Youtube](https://img.youtube.com/vi/eD36nxfT_Z0/2.jpg)](https://www.youtube.com/watch?v=eD36nxfT_Z0)
-[![Play on Youtube](https://img.youtube.com/vi/GHBKmzGmhoo/1.jpg)](https://www.youtube.com/watch?v=GHBKmzGmhoo)
+1. Download the APK from [WinMali GitHub Releases](https://github.com/worstpossibleuserlol/WinMali/releases).
+2. Install the APK on your Android device.
+3. Launch WinMali and wait for the initial setup to finish.
 
 ----
 
 # Useful Tips
 
-- If you are experiencing instability issues, try changing the Box64 preset in Container Settings -> Advanced Tab.
-- For applications that use .NET Framework, try installing `Wine Mono` found in Start Menu -> System Tools -> Installers.
-- If some older games don't open, try adding the environment variable `MESA_EXTENSION_MAX_YEAR=2003` in Container Settings -> Environment Variables.
-- Try running the games using the shortcut on the Winlator home screen, there you can define individual settings for each game.
-- To display low resolution games correctly, try to enabling the `Force Fullscreen` option in the shortcut settings.
-- To improve stability in games that uses Unity Engine, try changing the Box64 preset to `Stability` or in the shortcut settings add the exec argument `-force-gfx-direct`.
-- If you are experiencing audio crackling, try increasing the average latency in ALSA/PulseAudio configuration. Old games like Unreal Gold resolve audio issues by increasing this value to 90ms.
+These tips are adapted from the Winlator project. Some options may differ or be unavailable depending on the WinMali build.
+
+- If you experience instability, try changing the Box64 preset in **Container Settings → Advanced**.
+- For applications that require .NET Framework, try installing `Wine Mono` from **Start Menu → System Tools → Installers**, if it is included in your build.
+- For some older games on compatible Mesa-based graphics backends, try adding the environment variable `MESA_EXTENSION_MAX_YEAR=2003` in **Container Settings → Environment Variables**.
+- Launch games using their shortcuts on the WinMali home screen when you need separate settings for individual games.
+- To display some low-resolution games correctly, try enabling **Force Fullscreen** in the shortcut settings.
+- For some Unity games, try the Box64 `Stability` preset or add the execution argument `-force-gfx-direct` in the shortcut settings.
+- If you experience audio crackling, try increasing the average latency in the ALSA/PulseAudio configuration. The best value depends on the game and device.
+
+# Graphics Compatibility
+
+- Turnip is designed for supported Qualcomm Adreno GPUs. **Turnip is not a Mali graphics driver.**
+- Zink, VirGL, Vulkan, and OpenGL ES support depends on the graphics components included in the build and on the device's drivers.
+- Do not assume that a graphics option is supported just because it appears in another Winlator build.
 
 # Credits and Third-party apps
 
-- GLIBC Patches by [Termux Pacman](https://github.com/termux-pacman/glibc-packages)
+- Winlator by [Bruno](https://github.com/brunodev85/winlator) — upstream project
+- GLIBC patches by [Termux Pacman](https://github.com/termux-pacman/glibc-packages)
 - Wine ([winehq.org](https://www.winehq.org/))
-- Box86/Box64 by [ptitseb](https://github.com/ptitSeb)
-- Mesa (Turnip/Zink/VirGL) ([mesa3d.org](https://www.mesa3d.org))
+- Box86/Box64 by [ptitSeb](https://github.com/ptitSeb)
+- Mesa ([mesa3d.org](https://www.mesa3d.org))
 - DXVK ([github.com/doitsujin/dxvk](https://github.com/doitsujin/dxvk))
 - VKD3D ([gitlab.winehq.org/wine/vkd3d](https://gitlab.winehq.org/wine/vkd3d))
 - CNC DDraw ([github.com/FunkyFr3sh/cnc-ddraw](https://github.com/FunkyFr3sh/cnc-ddraw))
 
-Special thanks to all the developers involved in these projects.<br>
-Thank you to all the people who believe in this project.
+Special thanks to all the developers involved in these projects.  
+Thank you to everyone supporting WinMali.
