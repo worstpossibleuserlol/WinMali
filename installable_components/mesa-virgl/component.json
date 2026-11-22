@@ -1,0 +1,27 @@
+{
+  "id": "mesa-virgl",
+  "name": "Mesa / VirGL",
+  "component_type": "graphics_stack_and_virtual_gpu_renderer",
+  "upstream_projects": [
+    {
+      "name": "Mesa",
+      "url": "https://gitlab.freedesktop.org/mesa/mesa"
+    },
+    {
+      "name": "VirGL renderer",
+      "url": "https://gitlab.freedesktop.org/virgl/virglrenderer"
+    },
+    {
+      "name": "VirGL protocol",
+      "url": "https://gitlab.freedesktop.org/virgl/virgl"
+    }
+  ],
+  "package_status": "source_catalog_only",
+  "runtime_archive": null,
+  "target_platform": "Android-compatible Mesa build plus matching VirGL host/guest components",
+  "notes": [
+    "Mesa is a graphics stack, not one universal driver archive.",
+    "VirGL requires matching renderer/protocol integration; a random Linux build is not sufficient.",
+    "DXVK/VKD3D still require a compatible Vulkan path; VirGL does not automatically provide one."
+  ]
+}
