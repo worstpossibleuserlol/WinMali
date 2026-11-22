@@ -1,0 +1,14 @@
+{
+  "id": "fex-emu",
+  "name": "FEX-Emu",
+  "component_type": "x86_x86_64_to_aarch64_translation",
+  "upstream": "https://github.com/FEX-Emu/FEX",
+  "upstream_releases": "https://github.com/FEX-Emu/FEX/releases",
+  "package_status": "source_catalog_only",
+  "runtime_archive": null,
+  "target_platform": "Linux AArch64 upstream; Android/Bionic port and validation required",
+  "notes": [
+    "Upstream Linux releases must not be treated as Android runtime bundles.",
+    "Requires Android-specific syscall, loader, filesystem, and runtime integration before use."
+  ]
+}
