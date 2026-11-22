@@ -1,0 +1,15 @@
+{
+  "id": "box86",
+  "name": "Box86",
+  "component_type": "x86_32_to_arm32_translation",
+  "upstream": "https://github.com/ptitSeb/box86",
+  "upstream_releases": "https://github.com/ptitSeb/box86/releases",
+  "package_status": "source_catalog_only",
+  "runtime_archive": null,
+  "target_platform": "Android ARM64 with a compatible 32-bit ARM userspace",
+  "notes": [
+    "Upstream Linux source is not a ready-to-install Android runtime archive.",
+    "Requires a compatible 32-bit ARM environment and integration with the container runtime.",
+    "Do not list as installed until an Android-compatible build is produced and tested."
+  ]
+}
