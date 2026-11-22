@@ -1,0 +1,15 @@
+{
+  "id": "wine",
+  "name": "Wine",
+  "component_type": "windows_api_compatibility_layer",
+  "upstream": "https://gitlab.winehq.org/wine/wine",
+  "upstream_homepage": "https://www.winehq.org/",
+  "package_status": "source_catalog_only",
+  "runtime_archive": null,
+  "target_platform": "Android-compatible build matching WinMali's rootfs and runtime ABI",
+  "notes": [
+    "Upstream Wine source is not a ready-to-install WinMali runtime.",
+    "WinMali needs a build matching its rootfs layout, architecture, loader, and required libraries.",
+    "WineD3D is distributed as part of Wine; it is not a separate full Wine runtime."
+  ]
+}
