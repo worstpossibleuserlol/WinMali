@@ -1,0 +1,15 @@
+{
+  "id": "proton",
+  "name": "Valve Proton",
+  "component_type": "wine_based_steam_compatibility_tool",
+  "upstream": "https://github.com/ValveSoftware/Proton",
+  "upstream_documentation": "https://github.com/ValveSoftware/Proton#readme",
+  "package_status": "source_catalog_only",
+  "runtime_archive": null,
+  "target_platform": "Android ARM64 adaptation required",
+  "notes": [
+    "Valve describes Proton as a Steam Play compatibility tool for Linux.",
+    "The upstream source repository is not a ready-to-install Android/Winlator bundle.",
+    "Requires a compatible Wine build, runtime libraries, graphics stack, and Android integration."
+  ]
+}
